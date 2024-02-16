@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <head>
+      <nav class="nav-items2">
+        <div>
+          <i class="fa fa-code" style="font-size: 40px"></i>
+          <div class="heading-quiz">Technical questions</div>
+        </div>
+        <!-- <i class="fa fa-code" style="font-size: 26px; color: orange"></i> -->
+        <div>
+          <i class="fa fa-sun" style="font-size: 26px"></i>
+          <label class="switch">
+            <input type="checkbox" id="checkbox" onchange="handleToggle()" />
+            <span class="slider round"></span>
+          </label>
+          <i class="fa fa-moon" style="font-size: 26px"></i>
+        </div>
+      </nav>
+      <main class="quiz-main-container">
+        <section id="qtn1" class="qtn active">
+          <section class="question-container">
+            <section class="question">
+              <div>Question of 1 to 10</div>
+              <div>The script tag must be placed in ?</div>
+            </section>
+            <section class="option-container">
+              <div class="html-container2">
+                <div onclick="nextQuestion()">A</div>
+                <div>the head tag</div>
+              </div>
+              <div class="html-container2">
+                <div>B</div>
+                <div>the title or head</div>
+              </div>
+              <div class="html-container2">
+                <div>C</div>
+                <div>the head or body</div>
+              </div>
+              <div class="html-container2">
+                <div>D</div>
+                <div>after the body tag</div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section id="qtn2" class="qtn">
+          <section class="question-container">
+            <section class="question">
+              <div>Question of 2 to 10</div>
+              <div>What is the purpose of the HTML aside element?</div>
+            </section>
+            <section class="option-container">
+              <div class="html-container2">
+                <div onclick="nextQuestion()">A</div>
+                <div>
+                  To define additional information that is tangentially related
+                  to the content around it
+                </div>
+              </div>
+              <div class="html-container2">
+                <div>B</div>
+                <div>To create a section heading</div>
+              </div>
+              <div class="html-container2">
+                <div>C</div>
+                <div>To insert an image</div>
+              </div>
+              <div class="html-container2">
+                <div>D</div>
+                <div>To define a navigation menu</div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section id="qtn3" class="qtn">
+          <section class="question-container">
+            <section class="question">
+              <div>Question of 3 to 10</div>
+              <div>
+                What does the HTML attribute target="_blank" do when used in a
+                hyperlink?
+              </div>
+            </section>
+            <section class="option-container">
+              <div class="html-container2">
+                <div onclick="nextQuestion()">A</div>
+                <div>Opens the linked page in a new tab or window</div>
+              </div>
+              <div class="html-container2">
+                <div>B</div>
+                <div>Makes the hyperlink bold</div>
+              </div>
+              <div class="html-container2">
+                <div>C</div>
+                <div>Underlines the linked text</div>
+              </div>
+              <div class="html-container2">
+                <div>D</div>
+                <div>Adds a background color to the linked text</div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section id="qtn4" class="qtn">
+          <section class="question-container">
+            <section class="question">
+              <div>Question of 4 to 10</div>
+              <div>
+                What is the purpose of the charset="utf-8" attribute in an HTML
+                document?
+              </div>
+            </section>
+            <section class="option-container">
+              <div class="html-container2">
+                <div onclick="nextQuestion()">A</div>
+                <div>It specifies the background color of the document.</div>
+              </div>
+
+              <div class="html-container2">
+                <div>B</div>
+                <div>
+                  It defines the character encoding for the document, indicating
+                  the use of UTF-8.
+                </div>
+              </div>
+              <div class="html-container2">
+                <div>C</div>
+                <div>It sets the font size for the entire document.</div>
+              </div>
+              <div class="html-container2">
+                <div>D</div>
+                <div>It determines the document's language.</div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section id="qtn5" class="qtn">
+          <section class="question-container">
+            <section class="question">
+              <div>Question of 5 to 10</div>
+              <div>What does the CSS property margin: 0 auto; do?</div>
+            </section>
+            <section class="option-container">
+              <div class="html-container2">
+                <div onclick="nextQuestion()">A</div>
+                <div>Adds zero margin to all sides</div>
+              </div>
+              <div class="html-container2">
+                <div>B</div>
+                <div>Centers an element horizontally</div>
+              </div>
+              <div class="html-container2">
+                <div>C</div>
+                <div>Centers an element vertically</div>
+              </div>
+              <div class="html-container2">
+                <div>D</div>
+                <div>Removes the element from the layout</div>
+              </div>
+            </section>
+          </section>
+        </section>
+      </main>
+    </head>
+  </body>
+</html>
